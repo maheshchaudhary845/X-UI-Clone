@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>X - Clone</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link href="./css/output.css" rel="stylesheet">
+</head>
+<body class="bg-black text-white m-0 p-0">
+    <div class="main-container flex px-32 max-[750px]:px-0 max-[1080px]:px-8 max-[1290px]:px-16">
+        <div class="left-cont w-[20%] max-[750px]:w-[10%]">
+            <div class="flex flex-col gap-1.5 sticky top-0">
+                <div class="logo  hover:bg-gray-900 cursor-pointer p-[8px] w-full rounded-full flex max-[1000px]:justify-end">
+                    <svg fill="white" viewBox="0 0 24 24" aria-hidden="true" class="w-8 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lr1sllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
+                </div>
+                <div class="links">
+                    <ul class="text-xl flex flex-col max-[1000px]:items-end">
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">home</span><span class="max-[1000px]:hidden">Home</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">search</span><span class="max-[1000px]:hidden">Explore</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">notifications</span><span class="max-[1000px]:hidden">Notifications</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">mail</span><span class="max-[1000px]:hidden">Messages</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">hide_source</span><span class="max-[1000px]:hidden">Grok</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">group</span><span class="max-[1000px]:hidden">Communities</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><svg fill="white" viewBox="0 0 24 24" aria-hidden="true" class="w-7 r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-lr1sllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg><span class="max-[1000px]:hidden">Premium</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">person</span><span class="max-[1000px]:hidden">Profile</span></li>
+                        <li class="flex items-center gap-5 font-semibold hover:bg-gray-900 w-fit rounded-full p-2 min-[1001px]:pr-7 max-[430px]:p-1 max-[350px]:px-0 [350px]:py-3 cursor-pointer"><span class="material-symbols-outlined !text-3xl">pending</span><span class="max-[1000px]:hidden">More</span></li>
+                    </ul>
+                </div>
+                <div class="button max-[1000px]:flex justify-end">
+                    <button type="submit" class="bg-white text-black w-[90%] max-[1000px]:hidden h-13 rounded-full text-lg font-bold cursor-pointer hover:bg-gray-200">Post</button>
+                </div>
+            </div>
+        </div>
+            
+        <div class="middle-cont w-[50%] max-[1200px]:w-[100%] border-x border-gray-800  overflow-y-scroll [&::-webkit-scrollbar]:hidden">
+            <div class="header flex justify-between h-12">
+                <div class="foryou w-full flex justify-center items-center relative hover:bg-gray-900 cursor-pointer">
+                    <span class="font-semibold">For you</span>
+                    <div class="hr w-14 h-1 rounded-full bg-sky-500 absolute bottom-0"></div>
+                </div>
+                <div class="following w-full flex justify-center items-center hover:bg-gray-900 cursor-pointer">
+                    <span class="text-gray-500 font-semibold">Following</span>
+                </div>
+            </div>
+            <hr class="text-gray-800">
+            <div class="postbox px-4">
+                <div class="caption flex gap-3 items-center">
+                    <div class="avatar self-start">
+                        <img class="w-12 my-4 rounded-full" src="https://i.pinimg.com/474x/80/d9/66/80d966a163fb72f5681309cc397d8d66.jpg?nii=t" alt="avatar">
+                    </div>
+                    <div class="rightsection flex flex-col gap-2 w-full">
+                        <div class="input pt-2">
+                            <textarea class="w-full box-border pt-3 text-xl h-12 bg-transparent resize-none focus:outline-none" placeholder="What's happening?"></textarea>
+                        </div>
+                        <div class="pb-2">
+                            <button class="text-sm text-sky-500 font-semibold flex items-center justify-center gap-0.5 hover:bg-gray-900 p-1 rounded-full cursor-pointer">
+                                <span class="material-symbols-outlined !text-[16px]">globe_asia</span>
+                                Everyone can reply
+                            </button>
+                        </div>
+                        <hr class="text-gray-800">
+                        <div class="footercaption flex justify-between items-center">
+                            <div class="icons flex gap-4 text-sky-500">
+                                <span title="Media" class="material-symbols-outlined !text-[20px] cursor-pointer">image</span>
+                                <span title="GIF" class="material-symbols-outlined !text-[20px] cursor-pointer">gif_box</span>
+                                <span title="Grok" class="material-symbols-outlined !text-[20px] cursor-pointer">motion_photos_off</span>
+                                <span title="Poll" class="material-symbols-outlined !text-[20px] cursor-pointer">ballot</span>
+                                <span title="Emoji" class="material-symbols-outlined !text-[20px] cursor-pointer">add_reaction</span>
+                                <span title="Schedule" class="material-symbols-outlined !text-[20px] cursor-pointer">calendar_clock</span>
+                                <span title="Location" class="material-symbols-outlined !text-[20px] cursor-pointer">add_location_alt</span>
+                            </div>
+                            <div class="button">
+                                <button class="w-16 bg-white text-black rounded-full h-9 font-bold cursor-pointer hover:bg-gray-200">Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="separator w-full h-[2px] bg-gray-800 mt-2"></div>
+            <div class="posts">
+                <div class="post p-4 flex gap-2 hover:bg-gray-950 cursor-pointer">
+                    <div class="avatar2">
+                        <img class="w-10 rounded-full" src="https://img.freepik.com/premium-photo/anime-girl-with-black-hair-pink-bow-making-peace-sign-generative-ai_958098-95594.jpg?w=360" alt="img">
+                    </div>
+                    <div class="content w-full flex flex-col">
+                        <div class="header flex justify-between items-center h-[20px]">
+                            <div class="left flex gap-1">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Harman<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@harmanjeetkaur • 1h</div>
+                            </div>
+                            <div class="right flex items-center">
+                                <span class="material-symbols-outlined text-gray-500 hover:bg-gray-900 cursor-pointer rounded-full p-1">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="content leading-[1.25]">Let your hair whisper the story of your vibe.</div>
+                        </div>
+                        <div class="media flex justify-center max-h-[500px] w-full my-2 bg-amber-50 rounded-xl">
+                            <img class="w-sm object-cover" src="./media/harry.jpg" alt="harry">
+                        </div>
+                        <div class="interactions flex justify-between">
+                            <div class="comment flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="oklch(68.5% 0.169 237.323)" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg>
+                                <div class="count text-sky-500">15</div>
+                            </div>
+                            <div class="repost flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#05df72" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <div class="count text-green-400">219</div>
+                            </div>
+                            <div class="favourite flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="red" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <div class="count text-red-500">1.5K</div>
+                            </div>
+                            <div class="view flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="oklch(68.5% 0.169 237.323)" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg>
+                                <div class="count text-sky-500">10K</div>
+                            </div>
+                            <div class="extra flex text-gray-500 text-[13px] justify-center items-center gap-3">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w-full h-[2px] bg-gray-800"></div>
+                <div class="post p-4 flex gap-2 hover:bg-gray-950 cursor-pointer">
+                    <div class="avatar2">
+                        <img class="w-10 rounded-full" src="https://i.pinimg.com/474x/80/d9/66/80d966a163fb72f5681309cc397d8d66.jpg?nii=t" alt="img">
+                    </div>
+                    <div class="content w-full flex flex-col">
+                        <div class="header flex justify-between items-center h-[20px]">
+                            <div class="left flex gap-1">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Mahesh Chaudhary<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@maheshchaudhary • 2h</div>
+                            </div>
+                            <div class="right flex items-center">
+                                <span class="material-symbols-outlined text-gray-500 hover:bg-gray-900 cursor-pointer rounded-full p-1">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="content leading-[1.25]">Her head on my shoulder, the world in our rearview...</div>
+                        </div>
+                        <div class="media flex justify-center max-h-[500px] w-full my-2 rounded-xl">
+                            <img class="w-sm object-cover" src="./media/couple.jpg" alt="harry">
+                        </div>
+                        <div class="interactions flex justify-between">
+                            <div class="comment flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg>
+                                <div class="count">32</div>
+                            </div>
+                            <div class="repost flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#05df72" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <div class="count text-green-400">708</div>
+                            </div>
+                            <div class="favourite flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="red" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <div class="count text-red-500">5.9K</div>
+                            </div>
+                            <div class="view flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg>
+                                <div class="count">57K</div>
+                            </div>
+                            <div class="extra flex text-gray-500 text-[13px] justify-center items-center gap-3">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w-full h-[2px] bg-gray-800"></div>
+                <div class="post p-4 flex gap-2 hover:bg-gray-950 cursor-pointer">
+                    <div class="avatar2">
+                        <img class="w-10 rounded-full" src="https://img.freepik.com/premium-photo/anime-girl-with-black-hair-pink-bow-making-peace-sign-generative-ai_958098-95594.jpg?w=360" alt="img">
+                    </div>
+                    <div class="content w-full flex flex-col">
+                        <div class="header flex justify-between items-center h-[20px]">
+                            <div class="left flex gap-1">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Harman<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@harmanjeetkaur • 4h</div>
+                            </div>
+                            <div class="right flex items-center">
+                                <span class="material-symbols-outlined text-gray-500 hover:bg-gray-900 cursor-pointer rounded-full p-1">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="content leading-[1.25]">Two queens of my heart, forever side by side.</div>
+                        </div>
+                        <div class="media flex justify-center max-h-[500px] w-full my-2 rounded-xl">
+                            <img class="w-sm object-cover" src="./media/mummy_amu.jpg" alt="harry">
+                        </div>
+                        <div class="interactions flex justify-between">
+                            <div class="comment flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg>
+                                <div class="count">25</div>
+                            </div>
+                            <div class="repost flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <div class="count">342</div>
+                            </div>
+                            <div class="favourite flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="red" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <div class="count text-red-500">1.9K</div>
+                            </div>
+                            <div class="view flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg>
+                                <div class="count">17K</div>
+                            </div>
+                            <div class="extra flex text-gray-500 text-[13px] justify-center items-center gap-3">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w-full h-[2px] bg-gray-800"></div>
+                <div class="post p-4 flex gap-2 hover:bg-gray-950 cursor-pointer">
+                    <div class="avatar2">
+                        <img class="w-10 rounded-full" src="https://img.freepik.com/premium-photo/anime-girl-with-black-hair-pink-bow-making-peace-sign-generative-ai_958098-95594.jpg?w=360" alt="img">
+                    </div>
+                    <div class="content w-full flex flex-col">
+                        <div class="header flex justify-between items-center h-[20px]">
+                            <div class="left flex gap-1">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Harman<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@harmanjeetkaur • 6h</div>
+                            </div>
+                            <div class="right flex items-center">
+                                <span class="material-symbols-outlined text-gray-500 hover:bg-gray-900 cursor-pointer rounded-full p-1">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="content leading-[1.25]">First time buying magic in a chocolate shell—hello Hogwarts!</div>
+                            <div class="leading-[1.25] text-sky-500">#KinderJoy #HarryPotter #Hogwarts</div>
+                        </div>
+                        <div class="media flex justify-center max-h-[500px] w-full my-2 rounded-xl">
+                            <video src="./media/kinderjoy.mp4" controls autoplay muted loop></video>
+                        </div>
+                        <div class="interactions flex justify-between">
+                            <div class="comment flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="oklch(68.5% 0.169 237.323)" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg>
+                                <div class="count text-sky-500">103</div>
+                            </div>
+                            <div class="repost flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#05df72" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <div class="count text-green-400">1K</div>
+                            </div>
+                            <div class="favourite flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="red" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <div class="count text-red-500">53.9K</div>
+                            </div>
+                            <div class="view flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg>
+                                <div class="count">191K</div>
+                            </div>
+                            <div class="extra flex text-gray-500 text-[13px] justify-center items-center gap-3">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w-full h-[2px] bg-gray-800"></div>
+                <div class="post p-4 flex gap-2 hover:bg-gray-950 cursor-pointer">
+                    <div class="avatar2">
+                        <img class="w-10 rounded-full" src="https://i.pinimg.com/474x/80/d9/66/80d966a163fb72f5681309cc397d8d66.jpg?nii=t" alt="img">
+                    </div>
+                    <div class="content w-full flex flex-col">
+                        <div class="header flex justify-between items-center h-[20px]">
+                            <div class="left flex gap-1">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Mahesh Chaudhary<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@maheshchaudhary •7h</div>
+                            </div>
+                            <div class="right flex items-center">
+                                <span class="material-symbols-outlined text-gray-500 hover:bg-gray-900 cursor-pointer rounded-full p-1">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="content leading-[1.25]">When love fits in the palm of your hand but fills your whole world.</div>
+                        </div>
+                        <div class="media flex justify-center max-h-[500px] w-full my-2 rounded-xl">
+                            <img class="w-sm object-cover" src="./media/couple_miniature.jpg" alt="harry">
+                        </div>
+                        <div class="interactions flex justify-between">
+                            <div class="comment flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg>
+                                <div class="count">78</div>
+                            </div>
+                            <div class="repost flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <div class="count">483</div>
+                            </div>
+                            <div class="favourite flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="red" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <div class="count text-red-500">5.9K</div>
+                            </div>
+                            <div class="view flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg>
+                                <div class="count">32K</div>
+                            </div>
+                            <div class="extra flex text-gray-500 text-[13px] justify-center items-center gap-3">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w-full h-[2px] bg-gray-800"></div>
+                <div class="post p-4 flex gap-2 hover:bg-gray-950 cursor-pointer">
+                    <div class="avatar2">
+                        <img class="w-10 rounded-full" src="https://img.freepik.com/premium-photo/anime-girl-with-black-hair-pink-bow-making-peace-sign-generative-ai_958098-95594.jpg?w=360" alt="img">
+                    </div>
+                    <div class="content w-full flex flex-col">
+                        <div class="header flex justify-between items-center h-[20px]">
+                            <div class="left flex gap-1">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Harman<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@harmanjeetkaur • 4h</div>
+                            </div>
+                            <div class="right flex items-center">
+                                <span class="material-symbols-outlined text-gray-500 hover:bg-gray-900 cursor-pointer rounded-full p-1">more_horiz</span>
+                            </div>
+                        </div>
+                        <div class="caption">
+                            <div class="content leading-[1.25]">No need for words when your arms already say it all....</div>
+                        </div>
+                        <div class="media flex justify-center max-h-[500px] w-full my-2 rounded-xl">
+                            <img class="w-sm object-cover" src="./media/couple_hug.jpg" alt="harry">
+                        </div>
+                        <div class="interactions flex justify-between">
+                            <div class="comment flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.1-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg>
+                                <div class="count">743</div>
+                            </div>
+                            <div class="repost flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg>
+                                <div class="count">2.2K</div>
+                            </div>
+                            <div class="favourite flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="red" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M20.884 13.19c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg>
+                                <div class="count text-red-500">329K</div>
+                            </div>
+                            <div class="view flex text-gray-500 text-[13px] justify-center items-center gap-0.5">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[22px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg>
+                                <div class="count">780K</div>
+                            </div>
+                            <div class="extra flex text-gray-500 text-[13px] justify-center items-center gap-3">
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M4 4.5C4 3.12 5.119 2 6.5 2h11C18.881 2 20 3.12 20 4.5v18.44l-8-5.71-8 5.71V4.5zM6.5 4c-.276 0-.5.22-.5.5v14.56l6-4.29 6 4.29V4.5c0-.28-.224-.5-.5-.5h-11z"></path></g></svg>
+                                <svg fill="#6a7282" viewBox="0 0 24 24" aria-hidden="true" class="w-[20px] r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1xvli5t r-1hdv0qi"><g><path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path></g></svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="separator w-full h-[2px] bg-gray-800"></div>
+            </div>
+        </div>
+
+
+        <div class="right-cont w-[30%] ml-8 flex flex-col h-fit sticky -top-[32%] max-[1200px]:hidden">
+            <div class="search">
+                <input type="search" class="bg-black border-solid outline-1 placeholder-white outline-gray-800 focus:outline-blue-400 focus:outline-2 w-xs rounded-full h-11 pl-4" placeholder="Search">
+            </div>
+            <div class="subscribe border-[1px] border-gray-800 rounded-xl p-4 space-y-3">
+                <h2 class="text-lg font-bold">Subscribe to Premium</h2>
+                <p class="text-sm">Subscribe to unlock new features and if eligible, receive a share of revenue.</p>
+                <button class="w-26 h-9 rounded-full bg-sky-400 font-semibold cursor-pointer">Subscribe</button>
+            </div>
+            <div class="whats border-[1px] border-gray-800 rounded-xl space-y-2">
+                <h2 class="p-4 pb-0 text-xl font-bold">What's happening</h2>
+                <div class="tags">
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2">
+                        <div class="text-[13px] text-gray-500">Trending</div>
+                        <div class="text-[15px]">Pi Network</div>
+                        <div class="text-[13px] text-gray-500">6,157 posts</div>
+                    </div>
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2">
+                        <div class="text-[13px] text-gray-500">Sports • Trending</div>
+                        <div class="text-[15px]">#TeamIndia</div>
+                        <div class="text-[13px] text-gray-500">12.2K posts</div>
+                    </div>
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2">
+                        <div class="text-[13px] text-gray-500">Trending in India</div>
+                        <div class="text-[15px]">HxM</div>
+                        <div class="text-[13px] text-gray-500">32K posts</div>
+                    </div>
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2">
+                        <div class="text-[13px] text-gray-500">Politics • Trending</div>
+                        <div class="text-[15px]">Nupur Sharma</div>
+                        <div class="text-[13px] text-gray-500">11.8K posts</div>
+                    </div>
+                    <div class="hover:bg-gray-950 cursor-pointer px-4 py-5 text-center text-blue-500">Show More</div>
+                </div>
+            </div>
+
+            <div class="who border-[1px] border-gray-800 rounded-xl space-y-2">
+                <h2 class="p-4 pb-0 text-xl font-bold">Who to Follow</h2>
+                <div class="tags">
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2 flex items-center justify-between gap-2">
+                        <div class="left flex gap-2 items-center">
+                            <div class="pp">
+                                <img class="w-10 rounded-full" src="https://img.freepik.com/premium-photo/anime-girl-with-black-hair-pink-bow-making-peace-sign-generative-ai_958098-95594.jpg?w=360" alt="img">
+                            </div>
+                            <div class="name">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Harman<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@harmanjeetkaur</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button class="w-22 h-8 font-semibold bg-white text-black rounded-full cursor-pointer hover:bg-gray-200">Follow</button>
+                        </div>
+                    </div>
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2 flex items-center justify-between gap-2">
+                        <div class="left flex gap-2 items-center">
+                            <div class="pp">
+                                <img class="w-10 rounded-full" src="https://i.pinimg.com/474x/80/d9/66/80d966a163fb72f5681309cc397d8d66.jpg?nii=t" alt="img">
+                            </div>
+                            <div class="name">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Mahesh Chaudhary<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@maheshchaudhary</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button class="w-22 h-8 font-semibold bg-white text-black rounded-full cursor-pointer hover:bg-gray-200">Follow</button>
+                        </div>
+                    </div>
+                    <div class="tag hover:bg-gray-950 cursor-pointer px-4 py-2 flex items-center justify-between gap-2">
+                        <div class="left flex gap-2 items-center">
+                            <div class="pp">
+                                <img class="w-10 rounded-full" src="https://pbs.twimg.com/profile_images/790576698085416960/BkIjtFXR_bigger.jpg" alt="img">
+                            </div>
+                            <div class="name">
+                                <div class="text-[15px] font-semibold flex gap-0.5">Mahendra Singh Dhoni<svg fill="rgb(29 155 240)" viewBox="0 0 22 22" aria-label="Verified account" role="img" class="w-5 r-4qtqp9 r-yyyyoo r-1xvli5t r-bnwqim r-lrvibr r-m6rgpd r-1cvl2hr r-f9ja8p r-og9te1 r-3t4u6i" data-testid="icon-verified"><g><path d="M20.396 11c-.018-.646-.215-1.275-.57-1.816-.354-.54-.852-.972-1.438-1.246.223-.607.27-1.264.14-1.897-.131-.634-.437-1.218-.882-1.687-.47-.445-1.053-.75-1.687-.882-.633-.13-1.29-.083-1.897.14-.273-.587-.704-1.086-1.245-1.44S11.647 1.62 11 1.604c-.646.017-1.273.213-1.813.568s-.969.854-1.24 1.44c-.608-.223-1.267-.272-1.902-.14-.635.13-1.22.436-1.69.882-.445.47-.749 1.055-.878 1.688-.13.633-.08 1.29.144 1.896-.587.274-1.087.705-1.443 1.245-.356.54-.555 1.17-.574 1.817.02.647.218 1.276.574 1.817.356.54.856.972 1.443 1.245-.224.606-.274 1.263-.144 1.896.13.634.433 1.218.877 1.688.47.443 1.054.747 1.687.878.633.132 1.29.084 1.897-.136.274.586.705 1.084 1.246 1.439.54.354 1.17.551 1.816.569.647-.016 1.276-.213 1.817-.567s.972-.854 1.245-1.44c.604.239 1.266.296 1.903.164.636-.132 1.22-.447 1.68-.907.46-.46.776-1.044.908-1.681s.075-1.299-.165-1.903c.586-.274 1.084-.705 1.439-1.246.354-.54.551-1.17.569-1.816zM9.662 14.85l-3.429-3.428 1.293-1.302 2.072 2.072 4.4-4.794 1.347 1.246z"></path></g></svg></div>
+                                <div class="text-[15px] text-gray-500">@msdhoni</div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <button class="w-22 h-8 font-semibold bg-white text-black rounded-full cursor-pointer hover:bg-gray-200">Follow</button>
+                        </div>
+                    </div>
+
+                    <div class="hover:bg-gray-950 cursor-pointer px-4 py-5 text-center text-blue-500">Show More</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
